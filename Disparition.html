@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+<title>Javascript</title>
+
+</head>
+
+<body>
+<form method="post" name="form1" id="form1">
+<fieldset id="zone" style="width:800px"><legend>Zone1</legend>
+    <p>
+      <label>liste1
+      <select name="maListe1" id="Liste1">
+        <option>L1</option>
+        <option>L2</option>
+        <option>L3</option>
+      </select>
+      </label>
+    </p>
+	<p>
+	<input name="Aff" type="button" onclick="afficherListe1()" value="Afficher"  disabled="disabled"/>
+	<input name="Eff" type="button" onclick="effacerListe1()"  value="Effacer" />
+	</p>
+  </fieldset>
+</form>
+
+<form action="DisparitionV2.html" method="get">
+Changer de couleur
+<table >
+  <tr>
+    <td><label>
+      <input name="ChoixCouleur" type="radio" value="white" checked="checked" onclick ="changerCouleur(this.value)"/>
+      Blanc</label></td>
+  </tr>
+  <tr>
+    <td><label>
+      <input type="radio" name="ChoixCouleur" value="red" onclick ="changerCouleur(this.value)"/>
+      rouge</label></td>
+  </tr>
+  <tr>
+    <td><label>
+      <input type="radio" name="ChoixCouleur" value="grey" onclick ="changerCouleur(this.value)"/>
+      gris</label></td>
+  </tr>
+</table>
+</form>
+
+<script type="text/javascript" src="scriptDisparition.js"></script>
+</body>
+</html>
